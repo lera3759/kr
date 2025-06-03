@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container img {
+        width: 300px;
+        height: 120px;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      form div {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      form label {
+        width: 25%;
+      }
+
+      form input[type="email"],
+      form input[type="password"] {
+        width: 75%;
+      }
+
+      form a {
+        text-decoration: none;
+      }
+
+      form button {
+        background-color: #3fff5a;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+      }
+
+      #error-box {
+        background-color: #ff6c55;
+        color: white;
+        padding: 4px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <img src="https://via.placeholder.com/300x120" alt="img" />
+
+      <div id="error-box" style="display: none"></div>
+
+      <form novalidate>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" />
+        </div>
+
+        <div>
+          <a href="#">Forgot your password?</a>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div> -->
+
+    <!-- <script src="main.js"></script> -->
+
+    <div id="root"></div>
+
+    <script type="text/babel" src="server.js"></script>
+  </body>
+</html>
